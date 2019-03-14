@@ -1,0 +1,7 @@
+td, th {
+    border-left: solid 1px black;
+} 
+
+.no-border {
+    border-left: none;
+    }

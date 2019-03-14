@@ -1,0 +1,28 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#divBody {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    padding: 5px;
+}
+
+img {
+    width: 200;
+    height: 200;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

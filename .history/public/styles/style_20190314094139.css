@@ -1,0 +1,36 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#divBody {
+    display: flex;
+    padding: 20px;
+}
+
+#leftSpan {
+    width: 250px;
+    background-color: #00000044;
+}
+
+#rightSpan {
+    padding-left: 20px;
+    width: 100%;
+}
+
+img {
+    width: 200;
+    height: 200;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

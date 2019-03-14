@@ -1,0 +1,20 @@
+{
+    "firstname": "firstname",
+    "lastname": "lastname",
+    "title": "title",
+    "dateOfBirth": "birth",
+    "address": "address",
+    "nationality": "nationality",
+    "education": [
+        
+    ],
+    "workExp": [
+
+    ],
+    "projects": [
+
+    ],
+    "interests": [
+
+    ]
+}

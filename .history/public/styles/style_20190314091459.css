@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+.personInfo {
+
+}
+
+img {
+    width: 200;
+    height: 200;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

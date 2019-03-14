@@ -1,0 +1,26 @@
+{
+    "firstname": "firstname",
+    "lastname": "lastname",
+    "title": "title",
+    "dateOfBirth": "birth",
+    "address": "address",
+    "nationality": "nationality",
+    "contact": [
+
+    ],
+    "social": [
+
+    ],
+    "education": [
+        
+    ],
+    "workExp": [
+
+    ],
+    "projects": [
+
+    ],
+    "interests": [
+
+    ]
+}

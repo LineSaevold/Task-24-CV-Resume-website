@@ -1,0 +1,27 @@
+{   
+    "imageURL": "urlTest",
+    "firstname": "firstnameTest",
+    "lastname": "lastnameTest",
+    "title": "titleTest",
+    "dateOfBirth": "birthTest",
+    "address": "addressTest",
+    "nationality": "nationalityTest",
+    "contact": [
+
+    ],
+    "social": [
+
+    ],
+    "education": [
+        
+    ],
+    "workExp": [
+
+    ],
+    "projects": [
+
+    ],
+    "interests": [
+
+    ]
+}
