@@ -2,71 +2,77 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link type="text/css" rel="stylesheet" href="/styles/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task24: CV/Resume</title>
 </head>
 <body>
-    <div id='divBody'>
-        <nav class="black" role="navigation">
-            <div class="nav-wrapper container">
-                a(class="brand-logo", id="logo-container")=firstname + ' ' + lastname
-                <ul id="nav-mobile" class="sidenav">
-                    <li>
-                        <div class='blackText'>
-                            <div id='person'>
-                            img(src=imgURL)
-                            a(id='title')=title
-                            <br>
-                            </div>
-                            <div id='personInfo'>
-                                h4 About me
-                                a=firstname + ' ' + lastname
-                                a=date
-                                a=address
-                                a=nationality
-                            </div>
-                            <div id='contact'>
-                                h4 Contact
-                                a(href='mailto:'+email)=email
-                                a='+47 ' + phone
-                            </div>
-
-                            <div id='education'>
-                                h4 Education
-                                a=education
-                            </div>
-                        </div>
-                        <div id='social'>
-                            h4 Social media
-                            <div>
-                                a(href=github, class="fa fa-github")= ''
-                                a(href=linkedin, class="fa fa-linkedin")= ''
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <div id="root">
+        <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
+            <div class="mdc-drawer__header">
+                img(src=imgURL)
+                h3(class="mdc-drawer__title")=firstname + ' ' + lastname
+                h6(class="mdc-drawer__subtitle")=title
             </div>
-        </nav>
-        <div id='content'>
-            <h1>Om meg</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut lectus sed ante bibendum convallis sed vel nibh. Maecenas vitae orci massa. Praesent eget leo eget orci tempor semper. Aliquam vehicula tincidunt augue sit amet maximus. Sed nisl ex, tempus tincidunt magna non, pulvinar malesuada nulla. Sed sed tellus velit. Donec finibus porttitor massa, et porta erat lacinia id. Pellentesque leo tellus, auctor non nulla eu, tincidunt lacinia ex. Nullam semper lectus tincidunt velit volutpat, ac rutrum nunc dapibus. Maecenas ac porttitor velit. Vivamus ac aliquam quam. Morbi varius orci sapien, ac egestas mauris luctus ac.</p>
-            <h1>Prosjekterfaring</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut lectus sed ante bibendum convallis sed vel nibh. Maecenas vitae orci massa. Praesent eget leo eget orci tempor semper. Aliquam vehicula tincidunt augue sit amet maximus. Sed nisl ex, tempus tincidunt magna non, pulvinar malesuada nulla. Sed sed tellus velit. Donec finibus porttitor massa, et porta erat lacinia id. Pellentesque leo tellus, auctor non nulla eu, tincidunt lacinia ex. Nullam semper lectus tincidunt velit volutpat, ac rutrum nunc dapibus. Maecenas ac porttitor velit. Vivamus ac aliquam quam. Morbi varius orci sapien, ac egestas mauris luctus ac.</p>
-            <h1>Utdannelse</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut lectus sed ante bibendum convallis sed vel nibh. Maecenas vitae orci massa. Praesent eget leo eget orci tempor semper. Aliquam vehicula tincidunt augue sit amet maximus. Sed nisl ex, tempus tincidunt magna non, pulvinar malesuada nulla. Sed sed tellus velit. Donec finibus porttitor massa, et porta erat lacinia id. Pellentesque leo tellus, auctor non nulla eu, tincidunt lacinia ex. Nullam semper lectus tincidunt velit volutpat, ac rutrum nunc dapibus. Maecenas ac porttitor velit. Vivamus ac aliquam quam. Morbi varius orci sapien, ac egestas mauris luctus ac.</p>
-            <h1>Arbeidserfaring</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut lectus sed ante bibendum convallis sed vel nibh. Maecenas vitae orci massa. Praesent eget leo eget orci tempor semper. Aliquam vehicula tincidunt augue sit amet maximus. Sed nisl ex, tempus tincidunt magna non, pulvinar malesuada nulla. Sed sed tellus velit. Donec finibus porttitor massa, et porta erat lacinia id. Pellentesque leo tellus, auctor non nulla eu, tincidunt lacinia ex. Nullam semper lectus tincidunt velit volutpat, ac rutrum nunc dapibus. Maecenas ac porttitor velit. Vivamus ac aliquam quam. Morbi varius orci sapien, ac egestas mauris luctus ac.</p>
+            <div class="mdc-drawer__content">
+                <nav class="mdc-list">
+                    <a class="mdc-list-item" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">calendar_today</i>#{date}</a>
+                    <a class="mdc-list-item" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>#{address}</a>
+                    <a class="mdc-list-item" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">language</i>#{nationality}</a>
+                    <a class="mdc-list-item" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">work</i>#{currentJob}</a>
+                    <hr class="mdc-list-divider">
+                    <h6 class="mdc-list-group__subheader">Kontakt</h6>
+                    <a class="mdc-list-item" href="mailto:"+email tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">email</i>#{email}</a>
+                    <a class="mdc-list-item" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">phone_iphone</i>+47 #{phone}</a>
+                    <hr class="mdc-list-divider">
+                    <h6 class="mdc-list-group__subheader">Sosiale medier</h6>
+                    <a class="mdc-list-item" href=#{github} target="_blank" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">insert_link</i>GitHub</a>
+                    <a class="mdc-list-item" href=#{linkedin} target="_blank" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">insert_link</i>LinkedIn</a>
+                    <h6 class="mdc-list-group__subheader">REST Endpoint</h6>
+                    <a class="mdc-list-item" href="/data" target="_blank" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>/data</a>
+                </nav>
+            </div>
+        </aside>
+
+        <div class="mdc-drawer-app-content">
+            <header class="mdc-top-app-bar drawer-top-app-bar" id="app-bar">
+                <div class="mdc-top-app-bar__row">
+                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;">menu</button>
+                        <span class="mdc-top-app-bar__title">#{firstname} #{lastname}</span>
+                    </section>
+                </div>
+            </header>
+            <main class="main-content" id="main-content">
+                <div id='content'>
+                    <h1>Om meg</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut lectus sed ante bibendum convallis sed vel nibh. Maecenas vitae orci massa. Praesent eget leo eget orci tempor semper. Aliquam vehicula tincidunt augue sit amet maximus. Sed nisl ex, tempus tincidunt magna non, pulvinar malesuada nulla. Sed sed tellus velit. Donec finibus porttitor massa, et porta erat lacinia id. Pellentesque leo tellus, auctor non nulla eu, tincidunt lacinia ex. Nullam semper lectus tincidunt velit volutpat, ac rutrum nunc dapibus. Maecenas ac porttitor velit. Vivamus ac aliquam quam. Morbi varius orci sapien, ac egestas mauris luctus ac.</p>
+                    <br>
+                    <hr>
+                    <h1>Prosjekterfaring</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut lectus sed ante bibendum convallis sed vel nibh. Maecenas vitae orci massa. Praesent eget leo eget orci tempor semper. Aliquam vehicula tincidunt augue sit amet maximus. Sed nisl ex, tempus tincidunt magna non, pulvinar malesuada nulla. Sed sed tellus velit. Donec finibus porttitor massa, et porta erat lacinia id. Pellentesque leo tellus, auctor non nulla eu, tincidunt lacinia ex. Nullam semper lectus tincidunt velit volutpat, ac rutrum nunc dapibus. Maecenas ac porttitor velit. Vivamus ac aliquam quam. Morbi varius orci sapien, ac egestas mauris luctus ac.</p>
+                    <br>
+                    <hr>
+                    <h1>Utdannelse</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut lectus sed ante bibendum convallis sed vel nibh. Maecenas vitae orci massa. Praesent eget leo eget orci tempor semper. Aliquam vehicula tincidunt augue sit amet maximus. Sed nisl ex, tempus tincidunt magna non, pulvinar malesuada nulla. Sed sed tellus velit. Donec finibus porttitor massa, et porta erat lacinia id. Pellentesque leo tellus, auctor non nulla eu, tincidunt lacinia ex. Nullam semper lectus tincidunt velit volutpat, ac rutrum nunc dapibus. Maecenas ac porttitor velit. Vivamus ac aliquam quam. Morbi varius orci sapien, ac egestas mauris luctus ac.</p>
+                    <br>
+                    <hr>
+                    <h1>Arbeidserfaring</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut lectus sed ante bibendum convallis sed vel nibh. Maecenas vitae orci massa. Praesent eget leo eget orci tempor semper. Aliquam vehicula tincidunt augue sit amet maximus. Sed nisl ex, tempus tincidunt magna non, pulvinar malesuada nulla. Sed sed tellus velit. Donec finibus porttitor massa, et porta erat lacinia id. Pellentesque leo tellus, auctor non nulla eu, tincidunt lacinia ex. Nullam semper lectus tincidunt velit volutpat, ac rutrum nunc dapibus. Maecenas ac porttitor velit. Vivamus ac aliquam quam. Morbi varius orci sapien, ac egestas mauris luctus ac.</p>
+                    <br>
+                    <hr>
+                    <footer>
+                        <small>&copy; Copyright 2019, Jan Le & Line Sævold</small>
+                    </footer>
+                </div>
+            </main>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="/js/materialize.js"></script>
-    <script src="/js/init.js"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="/js/material.js"></script>
 </body>
 </html>

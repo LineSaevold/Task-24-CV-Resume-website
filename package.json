@@ -1,28 +1,29 @@
 {
-  "name": "task-24-cv-resume-website",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/janle/Task-24-CV-Resume-website.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/janle/Task-24-CV-Resume-website/issues"
-  },
-  "homepage": "https://github.com/janle/Task-24-CV-Resume-website#readme",
-  "dependencies": {
-    "@material/drawer": "^1.0.1",
-    "express": "^4.16.4",
-    "jquery": "^3.3.1",
-    "nodemon": "^1.18.10",
-    "pug": "^2.0.3"
-  },
-  "devDependencies": {}
+    "name": "task-24-cv-resume-website",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/janle/Task-24-CV-Resume-website.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/janle/Task-24-CV-Resume-website/issues"
+    },
+    "homepage": "https://github.com/janle/Task-24-CV-Resume-website#readme",
+    "dependencies": {
+        "@material/drawer": "^1.0.1",
+        "@material/top-app-bar": "^1.0.1",
+        "express": "^4.16.4",
+        "jquery": "^3.3.1",
+        "nodemon": "^1.18.10",
+        "pug": "^2.0.3"
+    },
+    "devDependencies": {}
 }
