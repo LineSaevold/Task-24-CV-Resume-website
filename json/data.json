@@ -1,36 +1,47 @@
 {
-    "imageURL": "https://i.pinimg.com/236x/6c/d0/a3/6cd0a36918f4d9d2393831c655cae3ad--school-portraits-school-photos.jpg",
-    "firstname": "Ola",
-    "lastname": "Nordmann",
-    "title": "Fuckboi#1",
+    "imageURL": "image/Line1.jpg",
+    "firstname": "Line",
+    "lastname": "Sævold",
+    "title": "Fullstack Java-utvikler",
     "currentJob": "Experis Academy",
-    "dateOfBirth": "14.03.2019",
-    "address": "Mølleparken 4, 0459 Oslo",
-    "nationality": "Ekte norsk",
-    "contact": [{
-            "email": "yoyo@work.no"
+    "dateOfBirth": "15.03.1995",
+    "address": "Dyrhaugen 15, 5236 Rådal",
+    "nationality": "Norsk",
+    "contact": [
+        {
+            "email": "linesaevold@hotmail.com"
         },
         {
-            "phone": "12345678"
+            "phone": "97468879"
         }
     ],
-    "social": [{
-            "github": "https://github.com/"
+    "social": [
+        {
+            "github": "https://github.com/LineSaevold"
         },
         {
-            "linkedin": "https://linkedin.com/"
+            "linkedin": "https://www.linkedin.com/in/line-algr%C3%B8y-s%C3%A6vold-589252175/"
         }
     ],
     "education": [{
-        "school": "Universitetet i Oslo"
+        "school": "Bachelor in information science from  the university of Bergen"
     }],
-    "workExp": [{
-        "exp1": "Coop Hordaland"
-    }],
-    "projects": [{
-        "pro1": "flixnet"
-    }],
-    "interests": [{
-        "hobby": "jogging"
-    }]
+    "workExp": [
+        {
+            "exp1": "Coop Extra Apeltun"
+        }
+    ],
+    "projects": [
+        {
+            "pro1": "Flixnet"
+        },
+        {
+            "pro2":"Foodstock"
+        }
+    ],
+    "interests": [
+        {
+            "hobby": "Cheerleading"
+        }
+    ]
 }
